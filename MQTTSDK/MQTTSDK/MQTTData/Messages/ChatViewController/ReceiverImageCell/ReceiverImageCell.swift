@@ -75,4 +75,8 @@ class ReceiverImageCell: UITableViewCell {
 //            self.imgCell.image = image
 //        }
     }
+    
+   
+    
+    
 }

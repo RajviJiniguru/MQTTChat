@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D531FCF022799F4F007F7B94 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D531FCEF22799F4E007F7B94 /* images.bundle */; };
 		D56CB61B22780CC700415825 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56CB61A22780CC700415825 /* Messages.storyboard */; };
 		D56CB6232278162D00415825 /* MessageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56CB6222278162D00415825 /* MessageConfig.swift */; };
 		D56CB65F22784CDC00415825 /* LoginDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56CB65E22784CDC00415825 /* LoginDAO.swift */; };
@@ -99,7 +100,6 @@
 		D570801A2273351700B608EE /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5707FF52273351700B608EE /* SocketManager.swift */; };
 		D570801B2273351700B608EE /* ChatQueryIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5707FF62273351700B608EE /* ChatQueryIntegration.swift */; };
 		D5899CD7227312DD00D9FB93 /* MQTTSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D5899CD5227312DD00D9FB93 /* MQTTSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5997923227AEE7500A89159 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D5997922227AEE7500A89159 /* images.bundle */; };
 		D5CCA4222276B59B00985BC5 /* ClientInformationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CCA3F72276B59A00985BC5 /* ClientInformationModal.swift */; };
 		D5CCA4232276B59B00985BC5 /* Mention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CCA3F82276B59A00985BC5 /* Mention.swift */; };
 		D5CCA4242276B59B00985BC5 /* LoginServiceModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CCA3FA2276B59A00985BC5 /* LoginServiceModelHandler.swift */; };
@@ -161,6 +161,7 @@
 /* Begin PBXFileReference section */
 		472243BB8450436C9FA061CF /* Pods-MQTTSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTSDK.release.xcconfig"; path = "Target Support Files/Pods-MQTTSDK/Pods-MQTTSDK.release.xcconfig"; sourceTree = "<group>"; };
 		5B002F022AACBB9C3A52BEC1 /* Pods_MQTTSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D531FCEF22799F4E007F7B94 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = images.bundle; path = ../../../../Rajvi/MQTT/MqttChatDemo/Resources/Assets.xcassets/images.bundle; sourceTree = "<group>"; };
 		D56CB61A22780CC700415825 /* Messages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
 		D56CB6222278162D00415825 /* MessageConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageConfig.swift; path = Messages/MessageConfig.swift; sourceTree = "<group>"; };
 		D56CB65E22784CDC00415825 /* LoginDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDAO.swift; sourceTree = "<group>"; };
@@ -255,7 +256,6 @@
 		D5899CD2227312DD00D9FB93 /* MQTTSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQTTSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5899CD5227312DD00D9FB93 /* MQTTSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQTTSDK.h; sourceTree = "<group>"; };
 		D5899CD6227312DD00D9FB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5997922227AEE7500A89159 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
 		D5CCA3F72276B59A00985BC5 /* ClientInformationModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientInformationModal.swift; sourceTree = "<group>"; };
 		D5CCA3F82276B59A00985BC5 /* Mention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mention.swift; sourceTree = "<group>"; };
 		D5CCA3FA2276B59A00985BC5 /* LoginServiceModelHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceModelHandler.swift; sourceTree = "<group>"; };
@@ -338,7 +338,7 @@
 		D5707E9A22731F3700B608EE /* MQTTData */ = {
 			isa = PBXGroup;
 			children = (
-				D5997922227AEE7500A89159 /* images.bundle */,
+				D531FCEF22799F4E007F7B94 /* images.bundle */,
 				D5CCA4802276D26900985BC5 /* AppDelegate.swift */,
 				D5CCA47C2276D0A000985BC5 /* External */,
 				D5CCA4772276C70100985BC5 /* DAO */,
@@ -878,7 +878,7 @@
 				D5707F75227331E400B608EE /* ViewNoDataFoundCell.xib in Resources */,
 				D56CB61B22780CC700415825 /* Messages.storyboard in Resources */,
 				D5707F73227331E400B608EE /* ReceiverImageCell.xib in Resources */,
-				D5997923227AEE7500A89159 /* images.bundle in Resources */,
+				D531FCF022799F4F007F7B94 /* images.bundle in Resources */,
 				D5707F77227331E400B608EE /* SenderImageCell.xib in Resources */,
 				D5707F7B227331E400B608EE /* MessageReceiverCell.xib in Resources */,
 				D5707F78227331E400B608EE /* twoTypingCell.xib in Resources */,
