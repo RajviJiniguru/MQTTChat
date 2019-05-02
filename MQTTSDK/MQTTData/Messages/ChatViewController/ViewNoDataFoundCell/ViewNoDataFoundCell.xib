@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewNoDataFoundCell" rowHeight="212" id="KGk-i7-Jjw" customClass="ViewNoDataFoundCell" customModule="Carers_Online" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="211.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lo3-Bg-sfb" userLabel="ViewNoDataFound">
+                        <rect key="frame" x="0.0" y="0.0" width="333" height="211.5"/>
+                        <subviews>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="straws_bg" translatesAutoresizingMaskIntoConstraints="NO" id="tvS-u6-mom">
+                                <rect key="frame" x="0.0" y="0.0" width="333" height="211.5"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="icn_logo_no_data" translatesAutoresizingMaskIntoConstraints="NO" id="cmu-UR-9Cc">
+                                <rect key="frame" x="109" y="48.5" width="115" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="Jhr-Xr-WXb"/>
+                                    <constraint firstAttribute="width" constant="115" id="Kcc-TB-oRs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuz-9G-io4">
+                                <rect key="frame" x="109.5" y="166.5" width="114" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="0Mo-la-5Nx"/>
+                                    <constraint firstAttribute="height" constant="33" id="6eE-Jk-3Y6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tvS-u6-mom" secondAttribute="trailing" id="65t-5q-5IL"/>
+                            <constraint firstItem="tvS-u6-mom" firstAttribute="top" secondItem="lo3-Bg-sfb" secondAttribute="top" id="Azh-rR-STo"/>
+                            <constraint firstAttribute="bottom" secondItem="tvS-u6-mom" secondAttribute="bottom" id="ImL-5D-giC"/>
+                            <constraint firstItem="cmu-UR-9Cc" firstAttribute="centerX" secondItem="lo3-Bg-sfb" secondAttribute="centerX" id="PW3-2e-Hy1"/>
+                            <constraint firstItem="Wuz-9G-io4" firstAttribute="centerX" secondItem="cmu-UR-9Cc" secondAttribute="centerX" id="RBZ-Ny-Mil"/>
+                            <constraint firstItem="cmu-UR-9Cc" firstAttribute="centerY" secondItem="lo3-Bg-sfb" secondAttribute="centerY" id="fks-l2-AwY"/>
+                            <constraint firstItem="tvS-u6-mom" firstAttribute="leading" secondItem="lo3-Bg-sfb" secondAttribute="leading" id="mzn-1R-WUP"/>
+                            <constraint firstItem="Wuz-9G-io4" firstAttribute="top" secondItem="cmu-UR-9Cc" secondAttribute="bottom" constant="3" id="pyq-k7-i94"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lo3-Bg-sfb" secondAttribute="trailing" id="JD3-lP-Wwt"/>
+                    <constraint firstItem="lo3-Bg-sfb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="egW-Nb-MQn"/>
+                    <constraint firstAttribute="bottom" secondItem="lo3-Bg-sfb" secondAttribute="bottom" id="i7o-Dy-iRI"/>
+                    <constraint firstItem="lo3-Bg-sfb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xHP-wp-1fX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="95.200000000000003" y="-243.77811094452775"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_logo_no_data" width="105" height="105"/>
+        <image name="straws_bg" width="414" height="736"/>
+    </resources>
+</document>
