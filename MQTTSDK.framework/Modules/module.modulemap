@@ -1,0 +1,11 @@
+framework module MQTTSDK {
+  umbrella header "MQTTSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MQTTSDK.Swift {
+    header "MQTTSDK-Swift.h"
+    requires objc
+}
